@@ -8,19 +8,14 @@
     <title>Maraware - Sua loja de peças do Maranhão</title>
 
     <link rel="stylesheet" href="style.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
 
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/webapp/css/icons/css/all.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-   <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Popper.js -->
+    <!-- JavaScript do Bootstrap (opcional, caso utilize componentes JavaScript) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Dependências JavaScript do Bootstrap (opcional, caso utilize componentes JavaScript) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
 </head>
 
@@ -31,7 +26,7 @@
                 <a class="navbar-brand d-flex gap-2" href="#">
                     <!-- <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
                     <img src="logo.png" width="55" alt="">
-                    <span class="align-self-center">Maraware Techno</span>
+                    <span class="align-self-center">Maraware Technology</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,11 +62,7 @@
         <section id="produtos-prontos">
 
             <div class="d-flex align-items-baseline justify-content-between">
-                <h2 class="categoria mb-5">Software Prontos</h2>
-                <div>
-                    <button class="arrow arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="arrow arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
+                <h2 class="categoria mb-5">Peças para Computadores</h2>
             </div>
 
             <!-- Código do Card -->
@@ -80,14 +71,67 @@
                     <div class="card">
                      
                         <div class="imagem">
-                            <img src="no-image.png" alt="">
+                            <img src="processador.webp" alt="">
                         </div>
                         <div class="conteudo">
                             <div class="card-header">
-                                <h2>Software em Java 1</h2>
+                                <h2>Processador i7 da Intel</h2>
                             </div>
-                            <p> Otimize suas vendas com nosso poderoso software de comércio. Possui
-                                gerenciamento de estoque.</p>
+                            <p>Desempenho excepcional, múltiplos núcleos, ideal para gamers e profissionais exigentes.</p>
+                            <!-- detalhes -->
+                            <div class="detalhes">
+                                <span class="preco">Preço:</span> <span class="valor">R$ 870</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                     
+                        <div class="imagem">
+                            <img src="processador-amd-ryzen-7.jpg" alt="">
+                        </div>
+                        <div class="conteudo">
+                            <div class="card-header">
+                                <h2>Processador Amd Ryzen 7</h2>
+                            </div>
+                            <p> Oferece alto desempenho multitarefa e resposta rápida. Ideal para jogos, edição de vídeo e design gráfico.</p>
+                            <!-- detalhes -->
+                            <div class="detalhes">
+                                <span class="preco">Preço:</span> <span class="valor">R$ 250</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                     
+                        <div class="imagem">
+                            <img src="HD.webp" alt="">
+                        </div>
+                        <div class="conteudo">
+                            <div class="card-header">
+                                <h2>HD Interno 1TB Sata 3</h2>
+                            </div>
+                            <p>Espaço amplo para armazenar documentos, fotos, vídeos e aplicativos.</p>
+                            <!-- detalhes -->
+                            <div class="detalhes">
+                                <span class="preco">Preço:</span> <span class="valor">R$ 90</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                     
+                        <div class="imagem">
+                            <img src="ssd-kingston.webp" alt="">
+                        </div>
+                        <div class="conteudo">
+                            <div class="card-header">
+                                <h2>SSD Kingston</h2>
+                            </div>
+                            <p>É uma unidade de armazenamento de estado sólido que oferece desempenho rápido e confiável.</p>
                             <!-- detalhes -->
                             <div class="detalhes">
                                 <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
@@ -99,74 +143,16 @@
                     <div class="card">
                      
                         <div class="imagem">
-                            <img src="no-image.png" alt="">
+                            <img src="placa-de-video-gigabyte-geforce-gtx-1650.webp" alt="">
                         </div>
                         <div class="conteudo">
                             <div class="card-header">
-                                <h2>Software em Java 1</h2>
+                                <h2>Placa de Vídeo Geforce GTX 1650</h2>
                             </div>
-                            <p> Otimize suas vendas com nosso poderoso software de comércio. Possui
-                                gerenciamento de estoque.</p>
+                            <p>Oferece um desempenho gráfico sólido para jogos e tarefas intensivas em gráficos.</p>
                             <!-- detalhes -->
                             <div class="detalhes">
-                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="card">
-                     
-                        <div class="imagem">
-                            <img src="no-image.png" alt="">
-                        </div>
-                        <div class="conteudo">
-                            <div class="card-header">
-                                <h2>Software em Java 1</h2>
-                            </div>
-                            <p> Otimize suas vendas com nosso poderoso software de comércio. Possui
-                                gerenciamento de estoque.</p>
-                            <!-- detalhes -->
-                            <div class="detalhes">
-                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="card">
-                     
-                        <div class="imagem">
-                            <img src="no-image.png" alt="">
-                        </div>
-                        <div class="conteudo">
-                            <div class="card-header">
-                                <h2>Software em Java 1</h2>
-                            </div>
-                            <p> Otimize suas vendas com nosso poderoso software de comércio. Possui
-                                gerenciamento de estoque.</p>
-                            <!-- detalhes -->
-                            <div class="detalhes">
-                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="card">
-                     
-                        <div class="imagem">
-                            <img src="no-image.png" alt="">
-                        </div>
-                        <div class="conteudo">
-                            <div class="card-header">
-                                <h2>Software em Java</h2>
-                            </div>
-                            <p> Otimize suas vendas com nosso poderoso software de comércio. Possui
-                                gerenciamento de estoque.</p>
-                            <!-- detalhes -->
-                            <div class="detalhes">
-                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
+                                <span class="preco">Preço:</span> <span class="valor">R$ 1.500</span>
                             </div>
                         </div>
                         
@@ -225,9 +211,9 @@
         <section id="produtos-personalizado">
             <div class="container-fluid d-flex justify-content-between">
                 <div class="area-text">
-                    <h1 class="categoria mb-4 mt-5">Personalize o seu Pedido</h1>
-                    <p>Não encontrou o que você deseja? Clique no botão abaixo para personalizar o seu pedido!</p>
-                    <button class="personalizar-btn mb-5">Montar Software</button>
+                    <h1 class="categoria mb-4 mt-5">Montamos peça por encomenda</h1>
+                    <p>Não encontrou o que você deseja? Clique no botão abaixo para encomenda um processador novinho do forno!</p>
+                    <button class="personalizar-btn mb-5">Encomenda Peça</button>
                 </div>
                 <div class="">
                     <img class="img-fluid" src="programmer2.png" alt="">
@@ -309,7 +295,7 @@
     </footer>
 
     <script src="main.js"></script>
-    <script src="dinamica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 
