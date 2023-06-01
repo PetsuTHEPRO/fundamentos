@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maraware - Sua loja de peças do Maranhão</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+
+    <!-- JavaScript do Bootstrap (opcional, caso utilize componentes JavaScript) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Dependências JavaScript do Bootstrap (opcional, caso utilize componentes JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex gap-2" href="index.html">
+                    <!-- <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                    <img src="logo.png" width="55" alt="">
+                    <span class="align-self-center">Maraware Technology</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#produtos-personalizado">Produtos</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#funcionario">Sobre</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <button class="round-button">Contato</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Page Heading -->
+        <div class="row mt-5 mb-2">
+            <div class="col-12">
+                <h1 class="page-header">Monitor Gamer Acer Predator</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img id="first-image" src="monitor.jpg" alt="Wacom Bamboo Tablet" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6">
+
+                <!-- Product Price  -->
+                <div class="form-group price_elem row mb-3">
+                    <label class="col-sm-3 col-md-3 form-control-label nopaddingtop">Price:</label>
+                    <div class="col-sm-8 col-md-9">
+                        <span class="product-form-price" id="product-form-price">R$ 1.000,00</span>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-3">
+                    <label for="Quantity" class="col-sm-3 col-md-3 form-control-label">Quantity:</label>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="number" class="qty form-control" id="input-qty" name="qty" maxlength="5" value="1">
+                    </div>
+                </div>
+
+                <div class="form-group product-stock product-available row visible mb-3">
+                    <label class="col-sm-3 col-md-3 form-control-label"></label>
+                    <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
+
+                        <input type="submit" class="adc btn btn-primary" value="Buy Product" />
+
+                        <a href="javascript:history.back()" class="btn btn-link btn-sm" title="Continue Shopping">&larr;
+                            Continue Shopping</a>
+                    </div>
+                </div>
+
+
+                <div class="form-group row mb-3">
+                    <label class="col-sm-3 col-md-3 form-control-label">Description:</label>
+                    <div class="col-sm-8 col-md-9 description">
+                        <p> Com uma taxa de atualização de 144Hz e tempo de resposta ultrarrápido,
+                            este monitor oferece uma jogabilidade suave e sem atrasos. 
+                            Sua resolução Full HD e tecnologia de painel IPS garantem imagens 
+                            nítidas e cores vibrantes, permitindo que você mergulhe totalmente 
+                            em seus jogos favoritos.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-md-3 form-control-label">Details:</label>
+                    <div class="col-sm-9 col-md-9">
+
+                        <p>Marca: Acer</p>
+
+                    </div>
+                </div>
+
+                <div id="product-sharing" class="row">
+                    <label class="col-sm-3 col-md-3 ">Share:</label>
+
+                    <ul class="list-inline social-networks col-sm-9 col-md-9">
+                        <li class="list-inline-item">
+                          <a href="#" class="btn btn-social btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="btn btn-social btn-tumblr"><i class="fab fa-tumblr"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="btn btn-social btn-pinterest"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="btn btn-social btn-twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                      
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                Copyright © 2023 SlothCode. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
