@@ -272,6 +272,16 @@ background-color: #3e8e41;
     font-weight: 600;
 }
 
+#planos ul{
+
+    list-style: none;
+}
+
+.na{
+    color: gray;
+    text-decoration: line-through;
+}
+
 footer{
     background-color: #0D0D0D;
     color: white;
@@ -292,6 +302,7 @@ footer{
     width: 80px;
     height: 80px;
     border: 2px solid #000;
+    background-size: cover; 
     border-radius: 50%;
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
@@ -411,5 +422,3 @@ footer{
 
 
 @media (min-width: 1400px) { }
-
-
